@@ -1,0 +1,215 @@
+.img-fluid{
+    border-radius: none;
+    border: none;
+    display: fit-content;
+    width: 100vh;
+    height: 90vh;
+    overflow: hidden;
+}
+
+.first{
+  width:55%  !important;
+ }
+ .second{
+  width: 45%  !important ;
+ }
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  }
+.card1{
+  padding-right: 2vh;
+}
+.card2{
+  padding-right: 2vh;
+}
+.card3{
+  padding-right: 2vh;
+}
+.card4{
+  padding-right: 2vh;
+}
+.cardicon{
+
+  width: 100px;
+  height: 80px;
+  align-items: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.cardicon4{
+
+  width: 100px;
+  height: 60px;
+  align-items: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+
+}
+
+@media screen and (min-width: 1400px) {
+  .card-info{
+    gap: 10em !important;
+  }       
+
+  .parent {
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    }
+
+    .bio{
+      font-size: 1em !important;
+    }
+    
+
+}
+
+.bio{
+  font-size: 0.8em !important;
+}
+
+
+/*Magic card*/
+.card {
+  height: 254px;
+  background: #fffdfd;
+  overflow: visible;
+  box-shadow: 0 5px 20px 2px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  height: 85%;
+ }
+ 
+ .card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  padding: 0 1rem;
+ }
+ 
+ .card-img {
+  --size: 100px;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  transform: translateY(-50%);
+  /* background: #42caff;
+  background: linear-gradient(to bottom, #42caff 0%, #e81aff 100%); */
+  background-image: url(../../assets/sticker.png);
+  position: relative;
+  transition: all .3s ease-in-out;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+ 
+ .card-img::before {
+  border-radius: inherit;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  width: 90%;
+  height: 90%;
+  transform: translate(-50%, -50%);
+  border: 1rem solid #e8e8e8;
+ }
+ 
+ /*Text*/
+ .text-title {
+  text-transform: uppercase;
+  font-size: 0.75em;
+  color: #42caff;
+  letter-spacing: 0.05rem;
+ }
+ 
+ .text-body {
+  font-size: .83em;
+  text-align: center;
+  color: #6f6d78;
+  font-weight: 400;
+  font-style:normal;
+ }
+ 
+ /*Hover*/
+ .card:hover .card-img {
+  --size: 110px;
+  width: var(--size);
+  height: var(--size);
+ }
+
+ /* Card CSS */
+ .flip-card {
+  background-color: transparent;
+  width: 170px;
+  height: 224px;
+  perspective: 1000px;
+  font-family: sans-serif;
+}
+
+.title {
+  font-size: 1.1em;
+  font-weight: 500;
+  text-align: center;
+  margin: 0;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 1px solid rgb(156, 150, 150);
+  border-radius: 1rem;
+}
+
+.flip-card-front {
+  background-color: white;
+}
+
+.flip-card-back {
+  background:  white;
+  color: black;
+  transform: rotateY(180deg);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  text-align: center;
+  font-weight: bold;
+  font-size: small;
+}
+
+

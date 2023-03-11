@@ -1,0 +1,49 @@
+<body>
+    <section>
+      <div class="container-fluid cont">
+        <div class="row">
+          <div class="col-lg-6 first">
+            <img src="../../assets/contact.gif" alt="" class="img-fluid img-thumbnail">
+          </div>
+          <div class="col-lg-6 second">
+            <div class="card">
+              <div class="card-img">
+              </div>
+              <p class = "reach">You can reach out to me for all project needs, technical consultation, job offers and so on...</p>
+              <div class="parent">
+            <div class="form" >
+                  <span class="signup">Contact Form</span>
+                  <div class = "parent2">
+                    <div>               
+                  <div class="form__group field">
+                    <input  required="" placeholder="Name" class="form__field" type="text" [(ngModel)]="name">
+                    <label class="form__label" for="name">Name</label>
+                </div>
+                <div class="form__group field">
+                  <input required="" placeholder="Email" class="form__field" type="text" [(ngModel)]="email">
+                  <label class="form__label" for="Email">Email</label>
+              </div>
+              <div class="form__group field">
+                <input required="" placeholder="Message" class="form__field" type="text" [(ngModel)]="message">
+                <label class="form__label" for="Message">Message</label>
+                 </div>
+                </div>
+                <div>
+                  <button class="learn-more" (click)="onsend()">
+                    <span class="circle" aria-hidden="true">
+                    <span class="icon arrow"></span>
+                    </span>
+                    <span class="button-text">Send</span>
+                  </button>
+                  </div>
+                </div>
+              </div>
+              </div>  <p class = "reach">Please <a href="../../assets/PraveenC-InternshalaResume.pdf" download="PraveenC-Resume.pdf">Click Here</a> to download the resume.</p>
+              </div>         
+
+          </div>
+        </div>
+      </div>
+    </section>
+    </body>
+    

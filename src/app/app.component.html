@@ -1,0 +1,49 @@
+<body>
+  <div class="disp">
+<div>
+    <nav class="navbar" role="navigation">
+      <div class="navbar-header">
+        <img src="../../assets/shake.gif" alt=""  class="hand"> 
+        
+      </div>
+  <ul class="nav">
+    <li class="nav-item" >
+      <a class="nav-link active"  routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page">About Me</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/exper" routerLinkActive="active" ariaCurrentWhenActive="page">Tech Stack</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/contact" routerLinkActive="active" ariaCurrentWhenActive="page">Contact Me</a>
+    </li>
+  </ul>
+</nav>
+  </div>
+  <router-outlet></router-outlet>
+</div>
+<div class="mobile">
+  <div aria-label="Orange and tan hamster running in a metal wheel" role="img" class="wheel-and-hamster">
+    <div class="wheel"></div>
+    <div class="hamster">
+      <div class="hamster__body">
+        <div class="hamster__head">
+          <div class="hamster__ear"></div>
+          <div class="hamster__eye"></div>
+          <div class="hamster__nose"></div>
+        </div>
+        <div class="hamster__limb hamster__limb--fr"></div>
+        <div class="hamster__limb hamster__limb--fl"></div>
+        <div class="hamster__limb hamster__limb--br"></div>
+        <div class="hamster__limb hamster__limb--bl"></div>
+        <div class="hamster__tail"></div>
+      </div>
+    </div>
+    <div class="spoke"></div>
+  </div>
+  <p class="mobiletext">Mobile View Currently not Supported!</p>
+
+</div>
+</body>

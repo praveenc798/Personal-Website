@@ -1,0 +1,98 @@
+.img-fluid{
+    border-radius: none;
+    border: none;
+    display: fit-content;
+    width: 100vh;
+    height: 90vh;
+    overflow: hidden;
+}
+
+/*Magic card*/
+.card {
+  height: 254px;
+  background: #fffdfd;
+  overflow: visible;
+  box-shadow: 0 5px 20px 2px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  height: 80%;
+ }
+ 
+ .card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  padding: 0 1rem;
+ }
+ 
+ .card-img {
+  --size: 100px;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  transform: translateY(-50%);
+  /* background: #42caff;
+  background: linear-gradient(to bottom, #42caff 0%, #e81aff 100%); */
+  background-image: url(../../assets/sticker.png);
+  position: relative;
+  transition: all .3s ease-in-out;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+ 
+ .card-img::before {
+  border-radius: inherit;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  width: 90%;
+  height: 90%;
+  transform: translate(-50%, -50%);
+  border: 1rem solid #e8e8e8;
+ }
+ 
+ /*Text*/
+ .text-title {
+  text-transform: uppercase;
+  font-size: 0.60em;
+  color: #42caff;
+  letter-spacing: 0.05rem;
+ }
+ 
+ .text-body {
+  font-size: .83em;
+  text-align: center;
+  color: #6f6d78;
+  font-weight: 400;
+  font-style:normal;
+  margin-bottom: 20px;
+ }
+ 
+ /*Hover*/
+ .card:hover .card-img {
+  --size: 110px;
+  width: var(--size);
+  height: var(--size);
+ }
+ .first{
+  width:45%  !important;
+ }
+ .second{
+  width: 60%  im4 !important ;
+ }
+
+ @media screen and (min-width: 1400px) {
+  .text-body {
+    font-size: 1.2em;
+    text-align: center;
+    color: #6f6d78;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   }
+          
+}
+ 
